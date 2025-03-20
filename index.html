@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">Brent</a>
+        <ul class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </ul>
+
+        <box-icon name='menu'></box-icon>
+
+        <a href="#contact" class="btn">Contact Me</a>
+    </nav>
+
+    <section id="home">
+        <img src="Images/BrentSmith.JPG" alt="Brent Smith">
+        <div class="info-box">
+            <h1>Hello, I'm Brent</h1>
+            <h3>Computer Programmer</h3>
+        </div>
+
+        <div class="btn-box">
+            <a href="ResumeBase.docx" download>
+            <div class="btn">Resume</div>
+        </a>
+            <div class="btn" onclick="window.location.href='https://github.com/Cxspar';">Github</div>
+        </div>
+
+    </section>
+
+    <section id="about">
+        <div class="about-box">
+            <div class="about-info">
+                <h1>About Me</h1>
+                <p>Hey, I'm Brent Smith and i'm a Full-Stack Developer.
+                I'm passionate about creating responsive, unique websites with a great user experience.
+                When i'm not studying resources online you can find me trying to max my Runescape account!
+                I hope you enjoy my Portfolio!</p>
+            </div>
+
+            <h2>Skills/Tools</h2>
+            <div class="skills">
+                <ul>
+                    <li><box-icon name='chevron-right' ></box-icon> HTML</li>
+                    <li><box-icon name='chevron-right' ></box-icon> CSS</li>
+                    <li><box-icon name='chevron-right' ></box-icon> JavaScript</li>
+                </ul>
+                <ul>
+                    <li><box-icon name='chevron-right' ></box-icon> C#</li>
+                    <li><box-icon name='chevron-right' ></box-icon> MySQL</li>
+                    <li><box-icon name='chevron-right' ></box-icon> Python</li>
+                </ul>
+                <ul>
+                    <li><box-icon name='chevron-right' ></box-icon> Git</li>
+                    <li><box-icon name='chevron-right' ></box-icon> VSCode</li>
+                    <li><box-icon name='chevron-right' ></box-icon> Intellij</li>
+                </ul>    
+            </div>
+        </div>
+        <img src="Images/PortfolioAVA.png" alt="illustration">
+    </section>
+
+    <section id="projects">
+        <h1 class="header">Projects</h1>
+        <div class="projects-container">
+            <div class="box">
+                <h1>Validation Form</h1>
+                <p>Using python I developed a simple program that prompts a user to enter in some basic contact
+                    information that also uses data validation to check if the information entered is valid.
+                </p>
+                <img src="Images/UserValid.jpg" alt="">
+            </div>
+            <div class="box">
+                <h1>Wedding Website</h1>
+                <p>A simple infographic website which displays basic information. Using HTML and CSS to give it some style
+                    and making it responsive on both desktop and mobile devices.
+                </p>
+                <img src="Images/WeddingSite.png" alt="">
+            </div>
+            <div class="box">
+                <h1>Real-Time Chat App</h1>
+                <p>Coming Soon!</p>
+                <img src="Images/ChatApppic.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h1 class="header">Contact</h1>
+        <form id="contact-form">
+            <div class="input-box">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter Your Full Name">
+            </div>
+            <div class="input-box">
+                <label for="email">Your Email</label>
+                <input type="text" id="email" placeholder="Enter Your Email">
+            </div>
+            <div class="input-box">
+                <label for="message">Message</label>
+                <input type="text" id="message" placeholder="Enter Your Message">
+            </div>
+            <div class="btn">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "b927YzYwVwkNqjBqQ",
+      });
+   })();
+</script>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
